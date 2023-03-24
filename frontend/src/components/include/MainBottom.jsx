@@ -9,10 +9,15 @@ const MainBottom = () => {
         ,fontFamily: "Single Day"
         ,position: "absolute"
         ,width: "100%"
-        ,bottom: "0"        
+        ,bottom: "0"   
+        ,position: "relative"
+        ,margin: "0"
+        ,padding: "0"
+             
         }}>
         <div style={{float: "left", margin: "0px", padding: "20px" }}>
-          <h2 style={{textDecoration: "underline"}}>찾아오시는길</h2>
+          <h2 style={{textDecoration: "underline"}}>
+            <img src="images/free-icon-pin-503082.png" style={{width:"40px"}}/> 찾아오시는길</h2>
           <br />
           <h3>주소:[06234]서울 강남구 테헤란로10길 9</h3>
           <br />

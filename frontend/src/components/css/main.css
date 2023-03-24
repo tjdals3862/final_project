@@ -1,37 +1,148 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 8px 12px;
+/*main_banner_info_link*/
+.main_info_link {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  letter-spacing: -0.3px;
+  font-family: "notokr-regular";
+}
+.main_info_link .info {
+  position: absolute;
+  width: 420px;
+  height: 245px;
+  padding: 40px;
+  top: -245px;
+  right: 0;
+  z-index: 99;
+  background: url("../../../public/images/test.png");
+}
+.main_info_link .info i {
+  display: block;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-size: 15px;
+  font-family: "notokr-medium";
+}
+.main_info_link .info strong {
+  display: block;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Poppins";
+  letter-spacing: 0;
+}
+.main_info_link .info span {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+}
+.main_info_link .info dl {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #e1e1e1;
+}
+.main_info_link .info dl dt {
+  display: inline-block;
+  font-family: "notokr-bold";
+}
+.main_info_link .info dl dt:nth-of-type(2) {
+  margin-left: 10px;
+}
+.main_info_link .info dl dd {
+  display: inline-block;
+}
+.main_info_link .link {
+  position: absolute;
+  width: 420px;
+  height: 335px;
+  padding: 35px;
+  right: 0;
+  z-index: 99;
+  background: #4a9e5c;
+}
+.main_info_link .link p {
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "Poppins";
+  letter-spacing: 0;
+}
+.main_info_link .link p:before {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+  content: "";
+  background: #fff;
+}
+.main_info_link .link p:after {
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+  content: "";
+  background: #fff;
+}
+.main_info_link .link ul {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.main_info_link .link ul li {
+  float: left;
+  width: 33.33%;
+}
+.main_info_link .link ul li:nth-child(1) a {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
+}
+.main_info_link .link ul li:nth-child(2) a {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
+}
+.main_info_link .link ul li:nth-child(3) a {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
+}
+.main_info_link .link ul li:nth-child(4) a {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
+}
+.main_info_link .link ul li:nth-child(5) a {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
+}
+.main_info_link .link ul li:nth-child(6) a {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
 }
 
-.menu {
-  margin: 20px;
-  background-color: lightgray;
-  border-bottom: 1px solid lightgray;
+.main_info_link .link ul li:nth-child(1) a:hover {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
+}
+.main_info_link .link ul li:nth-child(2) a:hover {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
+}
+.main_info_link .link ul li:nth-child(3) a:hover {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
+}
+.main_info_link .link ul li:nth-child(4) a:hover {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
+}
+.main_info_link .link ul li:nth-child(5) a:hover {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
+}
+.main_info_link .link ul li:nth-child(6) a:hover {
+  background: url("../../../public/images/test.png") no-repeat center 25px;
 }
 
-.navbar_logo i {
-  color: black;
-  padding-left: 0;
+.main_info_link .link ul li a {
+  display: block;
+  padding-top: 85px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "notokr-medium";
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
-
-.navbar_login {
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.navbar_menu {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding-left: 0;
-}
-
-.navbar_menu li {
-  padding: 8px 30px;
+.main_info_link .link ul li a:hover {
+  color: #fff;
 }

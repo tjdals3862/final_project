@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import "../css/main.css"
 const MainHeader = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  
+  const [isOpen, setIsOpen] = useState(false);  
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
+
+
   return (
     <>
-      <div className="menu">
+      <div className="menu" style={{fontFamily: 'Roboto Mono'}} >
         <nav className="navbar">
           <div className="navbar_logo">            
             <a href="/">KH 요양원</a>
@@ -24,7 +25,7 @@ const MainHeader = () => {
             </li>
 
             <div>
-              <li><span onClick={toggleDropdown}>메뉴1</span></li>
+              <li><span onClick={toggleDropdown}>요양원안내</span></li>
               {isOpen && (
                 <ul>
                   <li>Menu Item 1</li>
@@ -34,42 +35,32 @@ const MainHeader = () => {
               )}
             </div>
             <div>
-              <li><span onClick={toggleDropdown}>메뉴2</span></li>
+              <li><span onClick={toggleDropdown}>면회</span></li>
               {isOpen && (
                 <ul>
-                  <li>Menu Item 1</li>
+                  <li>면회신청</li>
                   <li>Menu Item 2</li>
                   <li>Menu Item 3</li>
                 </ul>
               )}
             </div>
             <div>
-              <li><span onClick={toggleDropdown}>메뉴3</span></li>
+              <li><span onClick={toggleDropdown}>내정보</span></li>
               {isOpen && (
                 <ul>
-                  <li>Menu Item 1</li>
-                  <li>Menu Item 2</li>
-                  <li>Menu Item 3</li>
+                  <li>내정보 확인</li>
+                  <li>결제하기</li>
+                  <li>결제 내역 확인</li>
                 </ul>
               )}
             </div>
             <div>
-              <li><span onClick={toggleDropdown}>메뉴4</span></li>
+              <li><span onClick={toggleDropdown}>공지사항</span></li>
               {isOpen && (
                 <ul>
-                  <li>Menu Item 1</li>
-                  <li>Menu Item 2</li>
-                  <li>Menu Item 3</li>
-                </ul>
-              )}
-            </div>
-            <div>
-              <li><span onClick={toggleDropdown}>메뉴5</span></li>
-              {isOpen && (
-                <ul>
-                  <li>Menu Item 1</li>
-                  <li>Menu Item 2</li>
-                  <li>Menu Item 3</li>
+                  <li>이달의 후원자</li>
+                  <li>후원하기</li>
+                  <li>자원봉사신청</li>
                 </ul>
               )}
             </div>
